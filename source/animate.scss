@@ -1,0 +1,20 @@
+$duration: 1s;
+$delay: .2s;
+$function: ease;
+$fill: both;
+$visibility: hidden;
+
+@import "properties";
+@import "bounce";
+@import "bounceIn";
+@import "bounceInDown";
+
+.bounce {
+	@include bounce($duration, $delay, $function, $fill, $visibility);
+}
+.bounceIn {
+	@include bounceIn($duration, $delay, $function, $fill, $visibility);
+}
+.bounceInDown {
+	@include bounceInDown($duration, $delay, $function, $fill, $visibility);
+}

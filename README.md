@@ -1,7 +1,10 @@
-#Animate.css
-*Just-add-water CSS animation*
+# Animate.scss &mdash; Work in Progress
+* A port of the core animate.css lib to Sass. *
 
-`animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
+CSS toolkit of CSS animations converted to Sass
+http://daneden.me/animate
+
+`animate.scss` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
 ##Usage
 To use animate.css in your website, simply drop the stylesheet into your document's `<head>`, and add the class `animated` to an element, along with any of the animation names. That's it! You've got a CSS animated element. Super!
