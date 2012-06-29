@@ -1,8 +1,7 @@
 # Animate.scss &mdash; Work in Progress
-* A port of the core animate.css lib to Sass. *
+__A port of the core animate.css lib to Sass.__
 
-CSS toolkit of CSS animations converted to Sass
-http://daneden.me/animate
+CSS toolkit of CSS animations (http://daneden.me/animate) converted to Sass
 
 `animate.scss` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 

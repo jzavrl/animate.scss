@@ -8,6 +8,9 @@ $visibility: hidden;
 @import "bounce";
 @import "bounceIn";
 @import "bounceInDown";
+@import "bounceInLeft";
+@import "bounceInRight";
+@import "bounceInUp";
 
 .bounce {
 	@include bounce($duration, $delay, $function, $fill, $visibility);
@@ -17,4 +20,13 @@ $visibility: hidden;
 }
 .bounceInDown {
 	@include bounceInDown($duration, $delay, $function, $fill, $visibility);
+}
+.bounceInLeft {
+	@include bounceInLeft($duration, $delay, $function, $fill, $visibility);
+}
+.bounceInRight {
+	@include bounceInRight($duration, $delay, $function, $fill, $visibility);
+}
+.bounceInUp {
+	@include bounceInUp($duration, $delay, $function, $fill, $visibility);
 }
