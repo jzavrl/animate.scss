@@ -23,10 +23,15 @@
 	25%, 75% {opacity: 0;}
 }
 
-.flash {
+@mixin flash($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: flash;
 	-moz-animation-name: flash;
 	-ms-animation-name: flash;
 	-o-animation-name: flash;
 	animation-name: flash;
+   	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }
