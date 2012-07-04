@@ -58,10 +58,15 @@
 	}
 }
 
-.fadeInDownBig {
+@mixin fadeInDownBig($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: fadeInDownBig;
 	-moz-animation-name: fadeInDownBig;
 	-ms-animation-name: fadeInDownBig;
 	-o-animation-name: fadeInDownBig;
 	animation-name: fadeInDownBig;
+   	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }

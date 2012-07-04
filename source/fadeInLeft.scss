@@ -58,10 +58,15 @@
 	}
 }
 
-.fadeInLeft {
+@mixin fadeInLeft($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: fadeInLeft;
 	-moz-animation-name: fadeInLeft;
 	-ms-animation-name: fadeInLeft;
 	-o-animation-name: fadeInLeft;
 	animation-name: fadeInLeft;
+   	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }

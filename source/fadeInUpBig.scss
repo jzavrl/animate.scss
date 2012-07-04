@@ -58,10 +58,15 @@
 	}
 }
 
-.fadeInUpBig {
+@mixin fadeInUpBig($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: fadeInUpBig;
 	-moz-animation-name: fadeInUpBig;
 	-ms-animation-name: fadeInUpBig;
 	-o-animation-name: fadeInUpBig;
 	animation-name: fadeInUpBig;
+   	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }
