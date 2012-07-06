@@ -58,10 +58,15 @@
 	}
 }
 
-.fadeInRightBig {
+@mixin fadeInRightBig($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: fadeInRightBig;
 	-moz-animation-name: fadeInRightBig;
 	-ms-animation-name: fadeInRightBig;
 	-o-animation-name: fadeInRightBig;
 	animation-name: fadeInRightBig;
+   	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }

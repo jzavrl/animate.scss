@@ -38,10 +38,15 @@
 	100% {transform: scale(1) rotate(0);}
 }
 
-.tada {
+@mixin tada($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: tada;
 	-moz-animation-name: tada;
 	-ms-animation-name: tada;
 	-o-animation-name: tada;
 	animation-name: tada;
+   	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }

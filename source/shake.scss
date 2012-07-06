@@ -28,10 +28,15 @@
 	20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
 
-.shake {
+@mixin shake($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: shake;
 	-moz-animation-name: shake;
 	-ms-animation-name: shake;
 	-o-animation-name: shake;
 	animation-name: shake;
+   	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }

@@ -54,10 +54,15 @@
 	}
 }
 
-.fadeInLeftBig {
+@mixin fadeInLeftBig($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: fadeInLeftBig;
 	-moz-animation-name: fadeInLeftBig;
 	-ms-animation-name: fadeInLeftBig;
 	-o-animation-name: fadeInLeftBig;
 	animation-name: fadeInLeftBig;
+   	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }

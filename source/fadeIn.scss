@@ -23,10 +23,15 @@
 	100% {opacity: 1;}
 }
 
-.fadeIn {
+@mixin fadeIn($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: fadeIn;
 	-moz-animation-name: fadeIn;
 	-ms-animation-name: fadeIn;
 	-o-animation-name: fadeIn;
 	animation-name: fadeIn;
+   	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }
