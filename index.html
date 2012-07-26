@@ -9,52 +9,75 @@
 
 	<title>animate.scss</title>
 	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="author" content="Jackilyn Hoxworth">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-	<meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
 	<link rel="stylesheet" href="assets/doc.css">
 	<link rel="stylesheet" href="animate.css">
 </head>
 <body>
-<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-	<div id="header-container">
-		<header class="wrapper clearfix">
-			<h1 id="title">animate.scss</h1>
-		</header>
-	</div>
-	<div id="main-container">
-		<div id="main" class="wrapper clearfix">
-			<div class="sandbox">
+	<div class="wrapper">
+      <header>
+
+      	<div class="sandbox">
 				<div id="animateTest">
-					<p>Hey! Hey guys! Watch this!</p>
-				</div>
+					<h1>animate.scss</h1>
+				
+
+        <p class="view"><a href="https://github.com/jackilyn/animate.scss">View the Project on GitHub <small>jackilyn/animate.scss</small></a></p>
+
+        <ul>
+          <li><a href="https://github.com/jackilyn/animate.scss/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/jackilyn/animate.scss/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/jackilyn/animate.scss">View On <strong>GitHub</strong></a></li>
+        </ul>
+        </div>
 			</div>
+      </header>
+      <section>
+      	<h2>A port of the core animate.css lib to Sass.</h2>
+
+		<p>CSS toolkit of CSS animations (http://daneden.me/animate) converted to Sass.</p>
+
+		<p><code>animate.scss</code> is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.</p>
+
+		<hr />
+		
 			<h3>Attention seekers</h3>
-			<a class="btn" data-test='flash'>flash</a>
-			<a class="btn" data-test='bounce'>bounce</a>
-			<a class="btn" data-test='shake'>shake</a>
-			<a class="btn" data-test='tada'>tada</a>
-			<a class="btn" data-test='swing'>swing</a>
-			<a class="btn" data-test='wobble'>wobble</a>
-			<a class="btn" data-test='wiggle'>wiggle</a>
-			<a class="btn" data-test='pulse'>pulse</a>
+			<p class="clearfix">
+				<a class="btn" data-test='flash'>flash</a>
+				<a class="btn" data-test='bounce'>bounce</a>
+				<a class="btn" data-test='shake'>shake</a>
+				<a class="btn" data-test='tada'>tada</a>
+				<a class="btn" data-test='swing'>swing</a>
+				<a class="btn" data-test='wobble'>wobble</a>
+				<a class="btn" data-test='wiggle'>wiggle</a>
+				<a class="btn" data-test='pulse'>pulse</a>
+			</p>
 
 			<h3>Flippers (currently Webkit, Firefox, &amp; IE10 only)</h3>
+			<p class="clearfix">
 			<a class="btn" data-test='flip'>flip</a>
 			<a class="btn" data-test='flipInX'>flipInX</a>
 			<a class="btn" data-test='flipOutX'>flipOutX</a>
 			<a class="btn" data-test='flipInY'>flipInY</a>
 			<a class="btn" data-test='flipOutY'>flipOutY</a>
+			</p>
 
 			<h3>Fading entrances</h3>
-			<p>
+			<p class="clearfix">
 				<a class="btn" data-test='fadeIn'>fadeIn</a>
 				<a class="btn" data-test='fadeInUp'>fadeInUp</a>
 				<a class="btn" data-test='fadeInDown'>fadeInDown</a>
 				<a class="btn" data-test='fadeInLeft'>fadeInLeft</a>
 				<a class="btn" data-test='fadeInRight'>fadeInRight</a>
+			</p>
+			<p class="clearfix">
 				<a class="btn" data-test='fadeInUpBig'>fadeInUpBig</a>
 				<a class="btn" data-test='fadeInDownBig'>fadeInDownBig</a>
 				<a class="btn" data-test='fadeInLeftBig'>fadeInLeftBig</a>
@@ -62,60 +85,77 @@
 			</p>
 
 			<h3>Fading exits</h3>
-			<a class="btn" data-test='fadeOut'>fadeOut</a>
-			<a class="btn" data-test='fadeOutUp'>fadeOutUp</a>
-			<a class="btn" data-test='fadeOutDown'>fadeOutDown</a>
-			<a class="btn" data-test='fadeOutLeft'>fadeOutLeft</a>
-			<a class="btn" data-test='fadeOutRight'>fadeOutRight</a>
-			<a class="btn" data-test='fadeOutUpBig'>fadeOutUpBig</a>
-			<a class="btn" data-test='fadeOutDownBig'>fadeOutDownBig</a>
-			<a class="btn" data-test='fadeOutLeftBig'>fadeOutLeftBig</a>
-			<a class="btn" data-test='fadeOutRightBig'>fadeOutRightBig</a>
+			<p class="clearfix">
+				<a class="btn" data-test='fadeOut'>fadeOut</a>
+				<a class="btn" data-test='fadeOutUp'>fadeOutUp</a>
+				<a class="btn" data-test='fadeOutDown'>fadeOutDown</a>
+				<a class="btn" data-test='fadeOutLeft'>fadeOutLeft</a>
+				<a class="btn" data-test='fadeOutRight'>fadeOutRight</a>
+				<a class="btn" data-test='fadeInRight'>fadeInRight</a>
+			</p>
+			<p class="clearfix">
+				<a class="btn" data-test='fadeOutUpBig'>fadeOutUpBig</a>
+				<a class="btn" data-test='fadeOutDownBig'>fadeOutDownBig</a>
+				<a class="btn" data-test='fadeOutLeftBig'>fadeOutLeftBig</a>
+				<a class="btn" data-test='fadeOutRightBig'>fadeOutRightBig</a>
+			</p>
 
 			<h3>Bouncing entrances</h3>
+			<p class="clearfix">
 			<a class="btn" data-test='bounceIn'>bounceIn</a>
 			<a class="btn" data-test='bounceInDown'>bounceInDown</a>
 			<a class="btn" data-test='bounceInUp'>bounceInUp</a>
 			<a class="btn" data-test='bounceInLeft'>bounceInLeft</a>
 			<a class="btn" data-test='bounceInRight'>bounceInRight</a>
+		</p>
 
 			<h3>Bouncing exits</h3>
+			<p class="clearfix">
 			<a class="btn" data-test='bounceOut'>bounceOut</a>
 			<a class="btn" data-test='bounceOutDown'>bounceOutDown</a>
 			<a class="btn" data-test='bounceOutUp'>bounceOutUp</a>
 			<a class="btn" data-test='bounceOutLeft'>bounceOutLeft</a>
 			<a class="btn" data-test='bounceOutRight'>bounceOutRight</a>
+		</p>
 
 			<h3>Rotating entrances</h3>
-			<a class="btn" data-test='rotateIn'>rotateIn</a>
-			<a class="btn" data-test='rotateInDownLeft'>rotateInDownLeft</a>
-			<a class="btn" data-test='rotateInDownRight'>rotateInDownRight</a>
-			<a class="btn" data-test='rotateInUpLeft'>rotateInUpLeft</a>
-			<a class="btn" data-test='rotateInUpRight'>rotateInUpRight</a>
+			<p class="clearfix">
+				<a class="btn" data-test='rotateIn'>rotateIn</a>
+				<a class="btn" data-test='rotateInDownLeft'>rotateInDownLeft</a>
+				<a class="btn" data-test='rotateInDownRight'>rotateInDownRight</a>
+				<a class="btn" data-test='fadeInRight'>fadeInRight</a>
+			</p>
+			<p class="clearfix">
+				<a class="btn" data-test='rotateInUpLeft'>rotateInUpLeft</a>
+				<a class="btn" data-test='rotateInUpRight'>rotateInUpRight</a>
+			</p>
 
 			<h3>Rotating exits</h3>
-			<a class="btn" data-test='rotateOut'>rotateOut</a>
-			<a class="btn" data-test='rotateOutDownLeft'>rotateOutDownLeft</a>
-			<a class="btn" data-test='rotateOutDownRight'>rotateOutDownRight</a>
-			<a class="btn" data-test='rotateOutUpLeft'>rotateOutUpLeft</a>
-			<a class="btn" data-test='rotateOutUpRight'>rotateOutUpRight</a>
+			<p class="clearfix">
+				<a class="btn" data-test='rotateOut'>rotateOut</a>
+				<a class="btn" data-test='rotateOutDownLeft'>rotateOutDownLeft</a>
+				<a class="btn" data-test='rotateOutDownRight'>rotateOutDownRight</a>
+				<a class="btn" data-test='fadeInRight'>fadeInRight</a>
+			</p>
+			<p class="clearfix">
+				<a class="btn" data-test='rotateOutUpLeft'>rotateOutUpLeft</a>
+				<a class="btn" data-test='rotateOutUpRight'>rotateOutUpRight</a>
+			</p>
 
 			<h3>Lightspeed</h3>
+			<p class="clearfix">
 			<a class="btn" data-test='lightSpeedIn'>lightSpeedIn</a>
 			<a class="btn" data-test='lightSpeedOut'>lightSpeedOut</a>
+		</p>
 
 			<h3>Specials</h3>
+			<p class="clearfix">
 			<a class="btn" data-test='hinge'>hinge</a>
 			<a class="btn" data-test='rollIn'>rollIn</a>
-			<a class="btn" data-test='rollOut'>rollOut</a>			
-		</div> <!-- #main -->
-	</div> <!-- #main-container -->
-
-	<div id="footer-container">
-		<footer class="wrapper">
-			<h3>footer</h3>
-		</footer>
-	</div>
+			<a class="btn" data-test='rollOut'>rollOut</a>	
+		</p>
+			</section>		
+		</div> <!-- wrapper -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
@@ -150,8 +190,4 @@
 	</script>
 
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> master
