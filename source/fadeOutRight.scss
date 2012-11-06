@@ -58,10 +58,15 @@
 	}
 }
 
-.fadeOutRight {
+@mixin fadeOutRight($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: fadeOutRight;
 	-moz-animation-name: fadeOutRight;
 	-ms-animation-name: fadeOutRight;
 	-o-animation-name: fadeOutRight;
 	animation-name: fadeOutRight;
+	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }

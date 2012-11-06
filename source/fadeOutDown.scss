@@ -58,10 +58,14 @@
 	}
 }
 
-.fadeOutDown {
+@mixin fadeOutDown($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: fadeOutDown;
 	-moz-animation-name: fadeOutDown;
 	-ms-animation-name: fadeOutDown;
 	-o-animation-name: fadeOutDown;
-	animation-name: fadeOutDown;
+	animation-name: fadeOutDown;@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }
