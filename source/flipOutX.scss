@@ -53,15 +53,15 @@
     }
 }
 
-.flipOutX {
+@mixin flipOutX($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: flipOutX;
-	-webkit-backface-visibility: visible !important;
 	-moz-animation-name: flipOutX;
-	-moz-backface-visibility: visible !important;
 	-ms-animation-name: flipOutX;
-	-ms-backface-visibility: visible !important;
 	-o-animation-name: flipOutX;
-	-o-backface-visibility: visible !important;
 	animation-name: flipOutX;
-	backface-visibility: visible !important;
+    @include duration($duration);
+    @include delay($delay);
+    @include function($function);
+    @include fill-mode($fill);
+    @include visibility($visibility);
 }
