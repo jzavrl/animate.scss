@@ -68,10 +68,15 @@
 	}
 }
 
-.rotateOutUpLeft {
+@mixin rotateOutUpLeft($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: rotateOutUpLeft;
 	-moz-animation-name: rotateOutUpLeft;
 	-ms-animation-name: rotateOutUpLeft;
 	-o-animation-name: rotateOutUpLeft;
 	animation-name: rotateOutUpLeft;
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
 }

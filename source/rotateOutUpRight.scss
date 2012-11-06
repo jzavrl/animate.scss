@@ -1,4 +1,4 @@
-@-webkit-keyframes rotateOutDownRight {
+@-webkit-keyframes rotateOutUpRight {
 	0% {
 		-webkit-transform-origin: right bottom;
 		-webkit-transform: rotate(0);
@@ -7,12 +7,12 @@
 	
 	100% {
 		-webkit-transform-origin: right bottom;
-		-webkit-transform: rotate(-90deg);
+		-webkit-transform: rotate(90deg);
 		opacity: 0;
 	}
 }
 
-@-moz-keyframes rotateOutDownRight {
+@-moz-keyframes rotateOutUpRight {
 	0% {
 		-moz-transform-origin: right bottom;
 		-moz-transform: rotate(0);
@@ -21,12 +21,12 @@
 	
 	100% {
 		-moz-transform-origin: right bottom;
-		-moz-transform: rotate(-90deg);
+		-moz-transform: rotate(90deg);
 		opacity: 0;
 	}
 }
 
-@-ms-keyframes rotateOutDownRight {
+@-ms-keyframes rotateOutUpRight {
 	0% {
 		-ms-transform-origin: right bottom;
 		-ms-transform: rotate(0);
@@ -35,12 +35,12 @@
 	
 	100% {
 		-ms-transform-origin: right bottom;
-		-ms-transform: rotate(-90deg);
+		-ms-transform: rotate(90deg);
 		opacity: 0;
 	}
 }
 
-@-o-keyframes rotateOutDownRight {
+@-o-keyframes rotateOutUpRight {
 	0% {
 		-o-transform-origin: right bottom;
 		-o-transform: rotate(0);
@@ -49,12 +49,12 @@
 	
 	100% {
 		-o-transform-origin: right bottom;
-		-o-transform: rotate(-90deg);
+		-o-transform: rotate(90deg);
 		opacity: 0;
 	}
 }
 
-@keyframes rotateOutDownRight {
+@keyframes rotateOutUpRight {
 	0% {
 		transform-origin: right bottom;
 		transform: rotate(0);
@@ -63,15 +63,20 @@
 	
 	100% {
 		transform-origin: right bottom;
-		transform: rotate(-90deg);
+		transform: rotate(90deg);
 		opacity: 0;
 	}
 }
 
-.rotateOutDownRight {
-	-webkit-animation-name: rotateOutDownRight;
-	-moz-animation-name: rotateOutDownRight;
-	-ms-animation-name: rotateOutDownRight;
-	-o-animation-name: rotateOutDownRight;
-	animation-name: rotateOutDownRight;
+@mixin rotateOutUpRight($duration, $delay, $function, $fill, $visibility) {
+	-webkit-animation-name: rotateOutUpRight;
+	-moz-animation-name: rotateOutUpRight;
+	-ms-animation-name: rotateOutUpRight;
+	-o-animation-name: rotateOutUpRight;
+	animation-name: rotateOutUpRight;
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
 }

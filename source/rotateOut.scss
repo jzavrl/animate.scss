@@ -68,10 +68,15 @@
 	}
 }
 
-.rotateOut {
+@mixin rotateOut($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: rotateOut;
 	-moz-animation-name: rotateOut;
 	-ms-animation-name: rotateOut;
 	-o-animation-name: rotateOut;
 	animation-name: rotateOut;
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
 }
