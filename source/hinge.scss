@@ -38,10 +38,15 @@
 	100% { transform: translateY(700px); opacity: 0; }
 }
 
-.hinge {
+@mixin hinge($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: hinge;
 	-moz-animation-name: hinge;
 	-ms-animation-name: hinge;
 	-o-animation-name: hinge;
 	animation-name: hinge;
+    @include duration($duration);
+    @include delay($delay);
+    @include function($function);
+    @include fill-mode($fill);
+    @include visibility($visibility);
 }
