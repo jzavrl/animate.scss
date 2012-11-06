@@ -25,7 +25,21 @@ $visibility: hidden;
 @import "fadeInRightBig";
 @import "fadeInUp";
 @import "fadeInUpBig";
+@import "fadeOut";
+@import "fadeOutDown";
+@import "fadeOutDownBig";
+@import "fadeOutLeft";
+@import "fadeOutLeftBig";
+@import "fadeOutRight";
+@import "fadeOutRightBig";
+@import "fadeOutUp";
+@import "fadeOutUpBig";
 @import "flash";
+@import "flip";
+@import "flipInX";
+@import "flipInY";
+@import "flipOutX";
+@import "flipOutY";
 @import "pulse";
 @import "shake";
 @import "swing";
@@ -51,7 +65,6 @@ $visibility: hidden;
 .bounceInUp {
 	@include bounceInUp($duration, $delay, $function, $fill, $visibility);
 }
-
 .bounceOut {
 	@include bounceOut($duration, $delay, $function, $fill, $visibility);
 }
@@ -94,8 +107,50 @@ $visibility: hidden;
 .fadeInUpBig {
 	@include fadeInUpBig($duration, $delay, $function, $fill, $visibility);
 }
+.fadeOut {
+	@include fadeOut($duration, $delay, $function, $fill, $visibility);
+}
+.fadeOutDown {
+	@include fadeOutDown($duration, $delay, $function, $fill, $visibility);
+}
+.fadeOutDownBig {
+	@include fadeOutDownBig($duration, $delay, $function, $fill, $visibility);
+}
+.fadeOutLeft {
+	@include fadeOutLeft($duration, $delay, $function, $fill, $visibility);
+}
+.fadeOutLeftBig {
+	@include fadeOutLeftBig($duration, $delay, $function, $fill, $visibility);
+}
+.fadeOutRight {
+	@include fadeOutRight($duration, $delay, $function, $fill, $visibility);
+}
+.fadeOutRightBig {
+	@include fadeOutRightBig($duration, $delay, $function, $fill, $visibility);
+}
+.fadeOutUp {
+	@include fadeOutUp($duration, $delay, $function, $fill, $visibility);
+}
+.fadeOutUpBig {
+	@include fadeOutUpBig($duration, $delay, $function, $fill, $visibility);
+}
 .flash {
 	@include flash($duration, $delay, $function, $fill, $visibility);
+}
+.flip {
+	@include flip($duration, $delay, $function, $fill, $visibility);
+}
+.flipInX {
+	@include flipInX($duration, $delay, $function, $fill, $visibility);
+}
+.flipInY {
+	@include flipInY($duration, $delay, $function, $fill, $visibility);
+}
+.flipOutX {
+	@include flipOutX($duration, $delay, $function, $fill, $visibility);
+}
+.flipOutY {
+	@include flipOutY($duration, $delay, $function, $fill, $visibility);
 }
 .pulse {
 	@include pulse($duration, $delay, $function, $fill, $visibility);

@@ -1,25 +1,7 @@
-### /Users/jackilyn/.gitignore-boilerplates/Global/OSX.gitignore
-
 .DS_Store
-
-# Thumbnails
 ._*
-
-# Files that might appear on external disk
 .Spotlight-V100
 .Trashes
-
-
-### /Users/jackilyn/.gitignore-boilerplates/Global/SASS.gitignore
-
-### SASS Ignores - "Sassy CSS" http://sass-lang.com/
 .sass-cache
-
-
-### /Users/jackilyn/.gitignore-boilerplates/Global/SublimeText.gitignore
-
-# SublimeText project files
 /*.sublime-project
 *.sublime-workspace
-
-

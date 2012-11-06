@@ -54,10 +54,15 @@
 	}
 }
 
-.fadeOutUp {
+@mixin fadeOutUp($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: fadeOutUp;
 	-moz-animation-name: fadeOutUp;
 	-ms-animation-name: fadeOutUp;
 	-o-animation-name: fadeOutUp;
 	animation-name: fadeOutUp;
+	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }

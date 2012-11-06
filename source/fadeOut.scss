@@ -23,10 +23,15 @@
 	100% {opacity: 0;}
 }
 
-.fadeOut {
+@mixin fadeOut($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: fadeOut;
 	-moz-animation-name: fadeOut;
 	-ms-animation-name: fadeOut;
 	-o-animation-name: fadeOut;
 	animation-name: fadeOut;
+	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
 }
