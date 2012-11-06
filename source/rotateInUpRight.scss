@@ -68,10 +68,15 @@
 	}
 }
 
-.rotateInUpRight {
+@mixin rotateInUpRight($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: rotateInUpRight;
 	-moz-animation-name: rotateInUpRight;
 	-ms-animation-name: rotateInUpRight;
 	-o-animation-name: rotateInUpRight;
 	animation-name: rotateInUpRight;
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
 }

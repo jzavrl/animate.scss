@@ -68,10 +68,15 @@
 	}
 }
 
-.rotateInDownRight {
+@mixin rotateInDownRight($duration, $delay, $function, $fill, $visibility) {
 	-webkit-animation-name: rotateInDownRight;
 	-moz-animation-name: rotateInDownRight;
 	-ms-animation-name: rotateInDownRight;
 	-o-animation-name: rotateInDownRight;
 	animation-name: rotateInDownRight;
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
 }
