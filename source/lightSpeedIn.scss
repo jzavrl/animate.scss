@@ -33,16 +33,18 @@
 	100% { transform: translateX(0%) skewX(0deg); opacity: 1; }
 }
 
-.lightSpeedIn {
+@mixin lightSpeedIn($duration, $delay, $fill, $visibility) {
     -webkit-animation-name: lightSpeedIn;
     -moz-animation-name: lightSpeedIn;
     -ms-animation-name: lightSpeedIn;
     -o-animation-name: lightSpeedIn;
     animation-name: lightSpeedIn;
 
-    -webkit-animation-timing-function: ease-out;
-    -moz-animation-timing-function: ease-out;
-    -ms-animation-timing-function: ease-out;
-    -o-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
+ 		$function: ease-out;
+
+    @include duration($duration);
+    @include delay($delay);
+    @include function($function);
+    @include fill-mode($fill);
+    @include visibility($visibility);
 }
