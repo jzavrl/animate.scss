@@ -41,7 +41,21 @@ $visibility: hidden;
 @import "flipOutX";
 @import "flipOutY";
 @import "hinge";
+@import "lightSpeedIn";
+@import "lightSpeedOut";
 @import "pulse";
+@import "rollIn";
+@import "rollOut";
+@import "rotateIn";
+@import "rotateInDownLeft";
+@import "rotateInDownRight";
+@import "rotateInUpLeft";
+@import "rotateInUpRight";
+@import "rotateOut";
+@import "rotateOutDownLeft";
+@import "rotateOutDownRight";
+@import "rotateOutUpLeft";
+@import "rotateOutUpRight";
 @import "shake";
 @import "swing";
 @import "tada";
@@ -156,8 +170,50 @@ $visibility: hidden;
 .hinge {
 	@include hinge($duration, $delay, $function, $fill, $visibility);
 }
+.lightSpeedIn {
+	@include lightSpeedIn($duration, $delay, $fill, $visibility);
+}
+.lightSpeedOut {
+	@include lightSpeedOut($duration, $delay, $fill, $visibility);
+}
 .pulse {
 	@include pulse($duration, $delay, $function, $fill, $visibility);
+}
+.rollIn {
+	@include rollIn($duration, $delay, $function, $fill, $visibility);
+}
+.rollOut {
+	@include rollOut($duration, $delay, $function, $fill, $visibility);
+}
+.rotateIn {
+	@include rotateIn($duration, $delay, $function, $fill, $visibility);
+}
+.rotateInDownLeft {
+	@include rotateInDownLeft($duration, $delay, $function, $fill, $visibility);
+}
+.rotateInDownRight {
+	@include rotateInDownRight($duration, $delay, $function, $fill, $visibility);
+}
+.rotateInUpLeft {
+	@include rotateInUpLeft($duration, $delay, $function, $fill, $visibility);
+}
+.rotateInUpRight {
+	@include rotateInUpRight($duration, $delay, $function, $fill, $visibility);
+}
+.rotateOut {
+	@include rotateOut($duration, $delay, $function, $fill, $visibility);
+}
+.rotateOutDownLeft {
+	@include rotateOutDownLeft($duration, $delay, $function, $fill, $visibility);
+}
+.rotateOutDownRight {
+	@include rotateOutDownRight($duration, $delay, $function, $fill, $visibility);
+}
+.rotateOutUpLeft {
+	@include rotateOutUpLeft($duration, $delay, $function, $fill, $visibility);
+}
+.rotateOutUpRight {
+	@include rotateOutUpRight($duration, $delay, $function, $fill, $visibility);
 }
 .shake {
 	@include shake($duration, $delay, $function, $fill, $visibility);
