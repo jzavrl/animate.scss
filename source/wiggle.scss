@@ -9,7 +9,7 @@
     70% { -webkit-transform: skewX(-2deg); }
     80% { -webkit-transform: skewX(1deg); }
     90% { -webkit-transform: skewX(0deg); }
-	100% { -webkit-transform: skewX(0deg); }
+    100% { -webkit-transform: skewX(0deg); }
 }
 
 @-moz-keyframes wiggle {
@@ -23,7 +23,7 @@
     70% { -moz-transform: skewX(-2deg); }
     80% { -moz-transform: skewX(1deg); }
     90% { -moz-transform: skewX(0deg); }
-	100% { -moz-transform: skewX(0deg); }
+    100% { -moz-transform: skewX(0deg); }
 }
 
 @-ms-keyframes wiggle {
@@ -37,7 +37,7 @@
     70% { -ms-transform: skewX(-2deg); }
     80% { -ms-transform: skewX(1deg); }
     90% { -ms-transform: skewX(0deg); }
-	100% { -ms-transform: skewX(0deg); }
+    100% { -ms-transform: skewX(0deg); }
 }
 
 @-o-keyframes wiggle {
@@ -51,7 +51,7 @@
     70% { -o-transform: skewX(-2deg); }
     80% { -o-transform: skewX(1deg); }
     90% { -o-transform: skewX(0deg); }
-	100% { -o-transform: skewX(0deg); }
+    100% { -o-transform: skewX(0deg); }
 }
 
 @keyframes wiggle {
@@ -65,19 +65,14 @@
     70% { transform: skewX(-2deg); }
     80% { transform: skewX(1deg); }
     90% { transform: skewX(0deg); }
-	100% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }
 }
 
 @mixin wiggle($duration, $delay, $function, $fill, $visibility) {
-    -webkit-animation-name: wiggle;
-    -moz-animation-name: wiggle;
-    -ms-animation-name: wiggle;
-    -o-animation-name: wiggle;
-    animation-name: wiggle;
-
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+    @include animation-name(wiggle);
+    @include duration($duration);
+    @include delay($delay);
+    @include function($function);
+    @include fill-mode($fill);
+    @include visibility($visibility);
 }

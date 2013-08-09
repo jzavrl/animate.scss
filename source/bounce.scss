@@ -28,12 +28,8 @@
 }
 
 @mixin bounce($duration, $delay, $function, $fill, $visibility) {
-	-webkit-animation-name: bounce;
-	-moz-animation-name: bounce;
-	-ms-animation-name: bounce;
-	-o-animation-name: bounce;
-	animation-name: bounce;
-   	@include duration($duration);
+	@include animation-name(bounce);
+  @include duration($duration);
 	@include delay($delay);
 	@include function($function);
 	@include fill-mode($fill);
